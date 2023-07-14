@@ -1,7 +1,9 @@
 import express from 'express';
 const app: express.Application = express();
+import connectDB from './database/db';
 
-app.get('/', (req, res) => {
+connectDB();
+app.get('/', (req: express.Request, res: express.Response) => {
     res.send('Hello World!');
 });
 
