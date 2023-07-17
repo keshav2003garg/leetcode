@@ -18,7 +18,7 @@ connectDB();
 const app = express();
 server.start().then(() => {
     app.use(express.json());
-    app.use(cors({ origin: 'http://localhost:3000' }));
+    app.use(cors({ origin: 'http://localhost:5173' }));
     app.use('/graphql', expressMiddleware(server));
     app.listen(process.env.PORT, () => {
         console.log('Server is running on http://localhost:4000');
