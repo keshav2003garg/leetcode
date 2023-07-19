@@ -22,15 +22,7 @@ module.exports = {
     },
     plugins: ['@typescript-eslint'],
     rules: {
-        'no-unused-vars': [
-            'error',
-            {
-                vars: 'all',
-                args: 'after-used',
-                ignoreRestSiblings: true,
-                argsIgnorePattern: '^_',
-            },
-        ],
+        "@typescript-eslint/no-unused-vars": ["error"],
         '@typescript-eslint/no-non-null-assertion': 'off',
     },
 };
